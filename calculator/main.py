@@ -1,12 +1,15 @@
 """ This is the increment function"""
 
+
 def inc(x_value):
     """ Increment Function adds one to the x_value"""
     return x_value + 1
 
-def Calculator():
-    """ Increment Function adds one to the x_value"""
+
+class Calculator():
+    """ This is the Calculator class"""
     result = 0
+
     def get_result(self):
         """ Get Result of Calculation"""
         return self.result
@@ -17,6 +20,19 @@ def Calculator():
         return self.result
 
     def subtract_number(self, value_a):
-        """ subtract number form result """
+        """ subtract number from result """
         self.result = self.result - value_a
+        return self.result
+
+    def multiply_number(self, value_a):
+        """ multiply number from result """
+        self.result = self.result * value_a
+        return self.result
+
+    def divide_number(self, value_a):
+        """ divide number from result """
+        if value_a != 0:
+            self.result = self.result / value_a
+        else:
+            raise ZeroDivisionError("Can't divide by zero error")
         return self.result
