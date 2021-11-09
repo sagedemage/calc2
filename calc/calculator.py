@@ -6,7 +6,7 @@ class Calculator:
     """ This is the Calculator class"""
     #the calculator class just calls methods on Calculations class
     @staticmethod
-    def get_result_value():
+    def get_last_result_value():
         """ This is the gets the result of the calculation"""
         # I made this method so that I don't have more than one action per function
         return Calculations.get_last_calculation_result_value()
